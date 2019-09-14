@@ -1,0 +1,5 @@
+# !/bin/bash
+# My first script
+
+source devel/setup.bash
+roslaunch my_robot amcl.launch

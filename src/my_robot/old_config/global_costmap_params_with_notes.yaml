@@ -1,0 +1,5 @@
+global_costmap:
+   global_frame: map			# defines what coordinate frame the costmap runs in
+   robot_base_frame: robot_footprint	# the base of the robot coordinate frame for the costmap to reference
+   update_frequency: 5.0 #1.0 #2.0	# how often (in Hz) the costmap runs its update loop
+   static_map: true			# costmap initializes itself based on map provided by map_server

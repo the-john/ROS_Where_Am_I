@@ -1,0 +1,21 @@
+TrajectoryPlannerROS:
+  max_vel_x: 0.45			# robot velocity limits in meters/second
+  min_vel_x: 0.1			# robot velocity limits in meters/second
+  max_vel_theta: 1.0			# robot velocity limits in radians/second
+
+  acc_lim_theta: 3.2			# robot acceleration limits in meters/second^2
+  acc_lim_x: 2.5			# robot acceleration limits in meters/second^2
+  acc_lim_y: 2.5			# robot acceleration limits in radians/sdecond^2
+  
+  escape_vel: -0.1			# robot backup velocity in meters/second
+  
+  sim_time: 2.0				# the amount of time (in seconds) to forward-simulate trajectories
+  vx_samples: 3.0			# number of samples used when exploring the x velocity space; #3
+  vtheta_samples: 20.0			# number of samples used when exploring the theta velocity space; #20
+
+  meter_scoring: true			# goal_distance and path_distance are in meters (not cells)
+  pdist_scale: 2.5			# how much the controller should stay close to given path (max = 5.0)
+  gdist_scale: 2.5			# how much the controller should achieve local goal (max = 5.0)
+  occdist_scale: 0.02			# how much the controller should attempt to avoid obstacles; #0.01
+
+  holonomic_robot: false		# velocity commands are generated fro a non-holonomic robot
