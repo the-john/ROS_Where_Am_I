@@ -13,15 +13,15 @@
     <param name="global_frame_id" value="map"/>
 
     <param name="initial_pose_x" value="0.0"/>
-    <param name="initial_pose_y" value="0.0"/>
-    <param name="initial_pose_a" value="0.0"/>
+    <param name="initial_pose_y" value="3.0"/>
+    <param name="initial_pose_a" value="-1.5708"/>
 
     <param name="transform_tolerance" value="0.2"/>
 
     <param name="max_particles" value="50"/>
     <param name="min_particles" value="5"/>
-    <param name="update_min_a" value="0.005"/>
-    <param name="update_min_d" value="0.01"/>    
+    <param name="update_min_a" value="0.05"/>
+    <param name="update_min_d" value="0.02"/>    
     <param name="laser_min_range" value="0.4"/>
     <param name="laser_max_range" value="30"/>
     <param name="laser_max_beams" value="50"/>
